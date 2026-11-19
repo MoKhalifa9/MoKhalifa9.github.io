@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ironpeak Roofing | Sample roofing website</title>
+  <meta name="description" content="Sample website for Ironpeak Roofing, a fictional roofing contractor: leak repair, storm damage, full replacements, gutters and free inspections. Built by Mohamed Khalifa as a demo.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#121a22">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121a22'/%3E%3Cpath d='M4 20 16 8l12 12' fill='none' stroke='%23f5a623' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="demo-banner" role="note">
+    <p><span class="tag">Demo</span> Sample site by Mohamed Khalifa. Ironpeak Roofing is fictional: its name, phone, address and reviews are invented. <a href="../../">Back to my portfolio</a></p>
+  </div>
+
+  <header class="topbar">
+    <div class="wrap topbar-row">
+      <a class="logo" href="#top" aria-label="Ironpeak Roofing, back to top">
+        <svg viewBox="0 0 48 32" width="44" height="30" aria-hidden="true"><path d="M2 28 24 6l22 22" fill="none" stroke="#f5a623" stroke-width="5" stroke-linejoin="miter"/><path d="M14 28 24 18l10 10" fill="none" stroke="#fff" stroke-width="4"/></svg>
+        <span>IRONPEAK<em>Roofing</em></span>
+      </a>
+      <a class="phone-link" href="tel:+14055550187">
+        <span class="phone-label">24/7 storm line</span>
+        <span class="phone-number">(405) 555-0187</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Cobalt Springs &amp; surrounding counties</p>
+          <h1>Roof leaking? <span>We're on it in 24 hours.</span></h1>
+          <p class="lede">Leak repair, storm damage and full replacements. Every job starts with a free inspection and a written, line-by-line estimate.</p>
+          <a class="btn btn-amber btn-lg" href="tel:+14055550187">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+            Call (405) 555-0187
+          </a>
+          <ul class="checks">
+            <li>Free inspection</li>
+            <li>Written estimate</li>
+            <li>Full cleanup</li>
+          </ul>
+        </div>
+
+        <div class="form-card" id="inspection">
+          <h2>Book a free inspection</h2>
+          <p class="form-sub">We'll call you back within 2 business hours.</p>
+          <!-- Replace the action URL with a form service endpoint to receive real requests. -->
+          <form action="https://example.com/REPLACE-WITH-FORM-ENDPOINT" method="post" data-quote-form>
+            <div class="field">
+              <label for="r-name">Full name</label>
+              <input id="r-name" name="name" type="text" autocomplete="name" required aria-describedby="r-name-error">
+              <p class="error" id="r-name-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="r-phone">Phone</label>
+              <input id="r-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="r-phone-error">
+              <p class="error" id="r-phone-error" aria-live="polite"></p>
+            </div>
+            <div class="field two">
+              <div>
+                <label for="r-zip">ZIP</label>
+                <input id="r-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" required aria-describedby="r-zip-error">
+                <p class="error" id="r-zip-error" aria-live="polite"></p>
+              </div>
+              <div>
+                <label for="r-service">Problem</label>
+                <select id="r-service" name="service" required aria-describedby="r-service-error">
+                  <option value="">Select</option>
+                  <option>Active leak</option>
+                  <option>Storm or hail damage</option>
+                  <option>Full replacement</option>
+                  <option>Gutters</option>
+                  <option>Inspection only</option>
+                </select>
+                <p class="error" id="r-service-error" aria-live="polite"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="r-email">Email <span class="opt">(optional)</span></label>
+              <input id="r-email" name="email" type="email" autocomplete="email" aria-describedby="r-email-error">
+              <p class="error" id="r-email-error" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="r-message">Details <span class="opt">(optional)</span></label>
+              <textarea id="r-message" name="message" rows="3" maxlength="1000" aria-describedby="r-message-error"></textarea>
+              <p class="error" id="r-message-error" aria-live="polite"></p>
+            </div>
+            <div class="trap" aria-hidden="true">
+              <label for="r-website">Leave this empty</label>
+              <input id="r-website" name="website" type="text" tabindex="-1" autocomplete="off" data-trap>
+            </div>
+            <p class="demo-form-note" role="note">Demo form: it checks your entries but sends nothing.</p>
+            <button class="btn btn-amber btn-block" type="submit" disabled data-demo-submit>Request inspection</button>
+            <p class="status" data-form-status role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" aria-labelledby="svc-title">
+      <div class="wrap">
+        <h2 id="svc-title" class="section-title"><span>01</span> What we fix</h2>
+        <ol class="svc-list">
+          <li>
+            <h3>Leak repair</h3>
+            <p>We find where the water is actually getting in, which is often not where the stain is, and fix that spot.</p>
+          </li>
+          <li>
+            <h3>Storm &amp; hail damage</h3>
+            <p>Emergency tarping, photo documentation and an itemized report you can hand to your insurance adjuster.</p>
+          </li>
+          <li>
+            <h3>Full roof replacement</h3>
+            <p>Tear-off down to the deck, new underlayment, flashing and ventilation, usually finished in one or two days.</p>
+          </li>
+          <li>
+            <h3>Gutters &amp; downspouts</h3>
+            <p>Seamless gutters, guards and re-pitching so water leaves the roof and the foundation.</p>
+          </li>
+          <li>
+            <h3>Inspections</h3>
+            <p>Buying, selling or just curious? Get a written condition report with photos of every slope.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="projects" aria-labelledby="proj-title">
+      <div class="wrap">
+        <h2 id="proj-title" class="section-title"><span>02</span> Before &amp; after</h2>
+        <p class="placeholder-note">Illustrated placeholders. A real site would show the contractor's own job photos here.</p>
+        <ul class="ba-list">
+          <li class="ba">
+            <figure>
+              <svg viewBox="0 0 320 200" role="img" aria-labelledby="b1"><title id="b1">Before: illustration of a worn roof with missing shingles</title><rect width="320" height="200" fill="#c9d3dc"/><path d="M20 120 160 30l140 90z" fill="#6b5f55"/><g fill="#c9d3dc"><rect x="120" y="70" width="22" height="10"/><rect x="190" y="88" width="26" height="10"/><rect x="80" y="98" width="20" height="10"/></g><rect x="50" y="120" width="220" height="80" fill="#e8e1d6"/><rect x="140" y="150" width="40" height="50" fill="#3a4652"/></svg>
+              <figcaption>Before</figcaption>
+            </figure>
+            <figure>
+              <svg viewBox="0 0 320 200" role="img" aria-labelledby="a1"><title id="a1">After: illustration of the same house with a new dark shingle roof</title><rect width="320" height="200" fill="#bcd4ea"/><path d="M20 120 160 30l140 90z" fill="#2b3640"/><g stroke="#3d4b57" stroke-width="2"><path d="M60 95h200M90 75h140M120 55h80"/></g><rect x="50" y="120" width="220" height="80" fill="#f2ede4"/><rect x="140" y="150" width="40" height="50" fill="#a33b20"/></svg>
+              <figcaption>After: full replacement</figcaption>
+            </figure>
+          </li>
+          <li class="ba">
+            <figure>
+              <svg viewBox="0 0 320 200" role="img" aria-labelledby="b2"><title id="b2">Before: illustration of a roof with a blue emergency tarp after a storm</title><rect width="320" height="200" fill="#9aa8b5"/><path d="M0 140 120 50l120 90z" fill="#5d544c"/><path d="M60 110 120 70l50 40z" fill="#2f6fb5"/><rect x="20" y="140" width="200" height="60" fill="#ddd5c8"/><path d="M240 140l40-40 40 40v60h-80z" fill="#cfc6b8"/></svg>
+              <figcaption>Before</figcaption>
+            </figure>
+            <figure>
+              <svg viewBox="0 0 320 200" role="img" aria-labelledby="a2"><title id="a2">After: illustration of the storm-damaged roof fully repaired</title><rect width="320" height="200" fill="#b7d0e6"/><path d="M0 140 120 50l120 90z" fill="#394754"/><g stroke="#4a5967" stroke-width="2"><path d="M40 120h160M70 98h100M96 78h48"/></g><rect x="20" y="140" width="200" height="60" fill="#f2ede4"/><path d="M240 140l40-40 40 40v60h-80z" fill="#e6dfd3"/></svg>
+              <figcaption>After: storm repair</figcaption>
+            </figure>
+          </li>
+          <li class="ba">
+            <figure>
+              <svg viewBox="0 0 320 200" role="img" aria-labelledby="b3"><title id="b3">Before: illustration of a sagging gutter overflowing with water</title><rect width="320" height="200" fill="#c4ced8"/><rect x="40" y="70" width="240" height="130" fill="#e3dccf"/><path d="M30 70 290 62" stroke="#7b7f84" stroke-width="10"/><g stroke="#4a86c5" stroke-width="3"><path d="M110 74v40M150 72v50M200 70v34"/></g></svg>
+              <figcaption>Before</figcaption>
+            </figure>
+            <figure>
+              <svg viewBox="0 0 320 200" role="img" aria-labelledby="a3"><title id="a3">After: illustration of a straight new gutter and downspout</title><rect width="320" height="200" fill="#bcd4ea"/><rect x="40" y="70" width="240" height="130" fill="#f2ede4"/><path d="M30 66H290" stroke="#2b3640" stroke-width="10"/><path d="M280 66v134" stroke="#2b3640" stroke-width="8"/></svg>
+              <figcaption>After: new seamless gutters</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="materials" aria-labelledby="mat-title">
+      <div class="wrap">
+        <h2 id="mat-title" class="section-title"><span>03</span> Choosing a roof</h2>
+        <div class="table-scroll" tabindex="0" role="region" aria-labelledby="mat-title">
+          <table>
+            <thead>
+              <tr><th scope="col">Material</th><th scope="col">Good for</th><th scope="col">Cost</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Architectural shingle</th><td>Most homes, best value</td><td>$$</td></tr>
+              <tr><th scope="row">Standing-seam metal</th><td>Hail country, long life</td><td>$$$</td></tr>
+              <tr><th scope="row">Impact-rated shingle</th><td>Hail, possible insurance discounts</td><td>$$</td></tr>
+              <tr><th scope="row">Low-slope membrane</th><td>Porches, additions, flat sections</td><td>$$</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="placeholder-note">General guide for a sample site. A real contractor would fill in their own products and prices.</p>
+      </div>
+    </section>
+
+    <section class="reviews" aria-labelledby="rev-title">
+      <div class="wrap">
+        <h2 id="rev-title" class="section-title"><span>04</span> Reviews</h2>
+        <p class="sample-flag" role="note"><strong>Sample text:</strong> not real customers. A real site would link to the business's verified Google reviews.</p>
+        <div class="review-row">
+          <figure class="review">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <blockquote><p>"Tarped the roof the same night the storm hit, then handled everything with the adjuster."</p></blockquote>
+            <figcaption>Sample reviewer, Cobalt Springs</figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <blockquote><p>"The estimate listed every item. The final bill matched it to the dollar."</p></blockquote>
+            <figcaption>Sample reviewer, Redbud Hollow</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <h2 id="faq-title" class="section-title"><span>05</span> Common questions</h2>
+        <details>
+          <summary>Is the inspection really free?</summary>
+          <p>Yes. We look at the roof, take photos and give you a written estimate. There's no charge and no obligation.</p>
+        </details>
+        <details>
+          <summary>Will you work with my insurance company?</summary>
+          <p>We document the damage and meet the adjuster on site if you'd like. Your policy decides what's covered.</p>
+        </details>
+        <details>
+          <summary>How long does a replacement take?</summary>
+          <p>Most homes take one or two days, depending on size, weather and how many layers come off.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="foot-brand">IRONPEAK Roofing</p>
+      <p>1907 Granite Ridge Road, Cobalt Springs (fictional address) · <a href="tel:+14055550187">(405) 555-0187</a></p>
+      <p>&copy; <span data-year>2026</span> Ironpeak Roofing. Demo content only.</p>
+      <p class="demo-line">Sample site by <a href="../../">Mohamed Khalifa</a>. Ironpeak Roofing is not a real company.</p>
+    </div>
+  </footer>
+
+  <nav class="callbar" aria-label="Quick contact">
+    <a class="btn btn-amber" href="tel:+14055550187">Call now</a>
+    <a class="btn btn-outline" href="#inspection">Free inspection</a>
+  </nav>
+
+  <script src="../quote-form.js" defer></script>
+</body>
+</html>
